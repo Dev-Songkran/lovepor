@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+body{
+	overflow: hidden;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	background: #fff4f7;
+}
+[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+  }
+.hbd{
+    text-align: center;
+	font-family: 'Pattaya', sans-serif;
+	z-index: 5555;
+}
+.bubbles{
+	position: relative;
+	font-size: 30px;
+	display: inline-block;
+	color: #333;
+	height: 70px;
+	line-height: 70px;
+}
+.entypo-heart{
+	position: absolute;
+	bottom: 10px;
+	z-index: 1;
+	text-shadow: none !important;
+	color: #FFBDC7; 
+}
