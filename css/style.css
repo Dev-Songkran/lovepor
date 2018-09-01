@@ -11,9 +11,7 @@ body{
 	justify-content: center;
 	background: #fff4f7;
 }
-[class*="entypo-"]:before {
-	font-family: 'entypo', sans-serif;
-  }
+
 .hbd{
     text-align: center;
 	font-family: 'Pattaya', sans-serif;
@@ -27,7 +25,7 @@ body{
 	height: 70px;
 	line-height: 70px;
 }
-.entypo-heart{
+.fa-heart{
 	position: absolute;
 	bottom: 10px;
 	z-index: 1;
