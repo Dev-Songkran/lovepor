@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+		<div class="container">
+			<section class="main">
+				<div class="hbd ">
+					<div class="bubbles">Happy Birth Day</span>
+				</div>
+
+			</section>
+			
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">	
+			
+			var bArray = [];
+			var sArray = [4,6,8,10];
+			for (var i = 0; i < $('.bubbles').width(); i++) {
+				bArray.push(i);
+			}
+			function randomValue(arr) {
+				return arr[Math.floor(Math.random() * arr.length)];
+			}
+			setInterval(function(){
+				var size = randomValue(sArray);
+				$('.bubbles').append('<span class="entypo-heart" style="left: ' + randomValue(bArray) + 'px; font-size: ' + size + 'px;"></span> ');
+				$('.entypo-heart').animate({
+					'bottom': '100%',
+					'opacity' : '-=0.7'
+				}, 3000, function(){
+					$(this).remove()
+				}
+				);
+		
+		
+			}, 350);
+		
+		</script>
+    </body>
+</html>
